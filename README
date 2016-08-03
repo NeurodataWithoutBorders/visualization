@@ -29,11 +29,11 @@ To visualize all the data for a particular time series, specify the series name 
 Example:
     plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli
 
-To visualize the same data in a given time intervali only, specify this interval with option '-t'. 
+To visualize the same data in a given time interval only, specify this interval with option '-t'. 
 Example:
     plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli -t 0-500
 
-To visualize the same data for a particular trial only, specify the trial id with '-T'.
+To visualize the same data for a particular trial only, specify the trial id with option '-T'.
 Example:
     plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli -T Trial_017
 
