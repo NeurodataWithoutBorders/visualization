@@ -1,0 +1,39 @@
+Script plot_nwb.py will visualize data in the NWB file format.
+
+Current version supports visualization of the time series data only.
+
+To see available options, type 'plot_nwb.py -h'.
+
+To produce a summary of the data that can be visualized, use the flag '-s'. For example:
+
+    plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -s
+
+This command will produce the following output:
+
+Summary table:
+
+time_series	keyName		time_range		path
+-----------------------------------------------------------------------
+lick_trace	EphusVars	91.415722-3563.141755	/acquisition/timeseries/lick_trace/data
+aom_input_trace	EphusVars	91.415722-3563.141755	/stimulus/presentation/aom_input_trace/data
+auditory_cue	CueTime    	91.415722-3563.141755	/stimulus/presentation/auditory_cue/data
+pole_in    	PoleInTime	91.415722-3563.141755	/stimulus/presentation/pole_in/data
+pole_out	PoleOutTime	91.415722-3563.141755	/stimulus/presentation/pole_out/data
+simple_optogentic_stimuli	EphusVars	91.415722-3563.141755	/stimulus/presentation/simple_optogentic_stimuli/data
+
+Trial ids:
+
+['Trial_001', 'Trial_002', 'Trial_003', 'Trial_004', 'Trial_005', 'Trial_006', 'Trial_007', 'Trial_008', 'Trial_009', 'Trial_010', 'Trial_011', 'Trial_012', 'Trial_013', 'Trial_014', 'Trial_015', 'Trial_016', 'Trial_017', 'Trial_018', 'Trial_019', 'Trial_020', 'Trial_021', 'Trial_022', 'Trial_023', 'Trial_024', 'Trial_025', 'Trial_026', 'Trial_027', 'Trial_028', 'Trial_029', 'Trial_030', 'Trial_031', 'Trial_032', 'Trial_033', 'Trial_034', 'Trial_035', 'Trial_036', 'Trial_037', 'Trial_038', 'Trial_039', 'Trial_040', 'Trial_041', 'Trial_042', 'Trial_043', 'Trial_044', 'Trial_045', 'Trial_046', 'Trial_047', 'Trial_048', 'Trial_049', 'Trial_050', 'Trial_051', 'Trial_052', 'Trial_053', 'Trial_054', 'Trial_055', 'Trial_056', 'Trial_057', 'Trial_058', 'Trial_059', 'Trial_060', 'Trial_061', 'Trial_062', 'Trial_063', 'Trial_064', 'Trial_065', 'Trial_066', 'Trial_067', 'Trial_068', 'Trial_069', 'Trial_070', 'Trial_071', 'Trial_072', 'Trial_073', 'Trial_074', 'Trial_075', 'Trial_076', 'Trial_077', 'Trial_078', 'Trial_079', 'Trial_080', 'Trial_081', 'Trial_082', 'Trial_083', 'Trial_084', 'Trial_085', 'Trial_086', 'Trial_087', 'Trial_088', 'Trial_089', 'Trial_090', 'Trial_091', 'Trial_092', 'Trial_093', 'Trial_094', 'Trial_095', 'Trial_096', 'Trial_097', 'Trial_098', 'Trial_099', 'Trial_100', 'Trial_101', 'Trial_102', 'Trial_103', 'Trial_104', 'Trial_105', 'Trial_106', 'Trial_107', 'Trial_108', 'Trial_109', 'Trial_110', 'Trial_111', 'Trial_112', 'Trial_113', 'Trial_114', 'Trial_115', 'Trial_116', 'Trial_117', 'Trial_118', 'Trial_119', 'Trial_120', 'Trial_121', 'Trial_122', 'Trial_123', 'Trial_124', 'Trial_125', 'Trial_126', 'Trial_127', 'Trial_128', 'Trial_129', 'Trial_130', 'Trial_131', 'Trial_132', 'Trial_133', 'Trial_134', 'Trial_135', 'Trial_136', 'Trial_137', 'Trial_138', 'Trial_139', 'Trial_140', 'Trial_141', 'Trial_142', 'Trial_143', 'Trial_144', 'Trial_145', 'Trial_146', 'Trial_147', 'Trial_148', 'Trial_149', 'Trial_150', 'Trial_151', 'Trial_152', 'Trial_153', 'Trial_154', 'Trial_155', 'Trial_156', 'Trial_157', 'Trial_158', 'Trial_159', 'Trial_160', 'Trial_161', 'Trial_162', 'Trial_163', 'Trial_164', 'Trial_165', 'Trial_166', 'Trial_167', 'Trial_168', 'Trial_169', 'Trial_170', 'Trial_171', 'Trial_172', 'Trial_173', 'Trial_174', 'Trial_175', 'Trial_176', 'Trial_177', 'Trial_178', 'Trial_179', 'Trial_180', 'Trial_181', 'Trial_182', 'Trial_183', 'Trial_184', 'Trial_185', 'Trial_186', 'Trial_187', 'Trial_188', 'Trial_189', 'Trial_190', 'Trial_191', 'Trial_192', 'Trial_193', 'Trial_194', 'Trial_195', 'Trial_196', 'Trial_197', 'Trial_198', 'Trial_199', 'Trial_200', 'Trial_201', 'Trial_202', 'Trial_203', 'Trial_204', 'Trial_205', 'Trial_206', 'Trial_207', 'Trial_208', 'Trial_209', 'Trial_210', 'Trial_211', 'Trial_212', 'Trial_213', 'Trial_214', 'Trial_215', 'Trial_216', 'Trial_217', 'Trial_218', 'Trial_219', 'Trial_220', 'Trial_221', 'Trial_222', 'Trial_223', 'Trial_224', 'Trial_225', 'Trial_226', 'Trial_227', 'Trial_228', 'Trial_229', 'Trial_230', 'Trial_231', 'Trial_232', 'Trial_233', 'Trial_234', 'Trial_235', 'Trial_236', 'Trial_237', 'Trial_238', 'Trial_239', 'Trial_240', 'Trial_241', 'Trial_242', 'Trial_243', 'Trial_244', 'Trial_245', 'Trial_246', 'Trial_247', 'Trial_248', 'Trial_249', 'Trial_250', 'Trial_251', 'Trial_252', 'Trial_253', 'Trial_254', 'Trial_255', 'Trial_256', 'Trial_257', 'Trial_258', 'Trial_259', 'Trial_260', 'Trial_261', 'Trial_262', 'Trial_263', 'Trial_264', 'Trial_265', 'Trial_266', 'Trial_267', 'Trial_268', 'Trial_269', 'Trial_270', 'Trial_271', 'Trial_272', 'Trial_273', 'Trial_274', 'Trial_275', 'Trial_276', 'Trial_277', 'Trial_278', 'Trial_279', 'Trial_280', 'Trial_281', 'Trial_282', 'Trial_283', 'Trial_284', 'Trial_285', 'Trial_286', 'Trial_287', 'Trial_288', 'Trial_289', 'Trial_290', 'Trial_291', 'Trial_292', 'Trial_293', 'Trial_294', 'Trial_295', 'Trial_296', 'Trial_297', 'Trial_298', 'Trial_299', 'Trial_300', 'Trial_301', 'Trial_302', 'Trial_303', 'Trial_304', 'Trial_305', 'Trial_306', 'Trial_307', 'Trial_308', 'Trial_309', 'Trial_310', 'Trial_311', 'Trial_312', 'Trial_313', 'Trial_314', 'Trial_315', 'Trial_316', 'Trial_317', 'Trial_318', 'Trial_319', 'Trial_320', 'Trial_321', 'Trial_322', 'Trial_323', 'Trial_324', 'Trial_325', 'Trial_326', 'Trial_327', 'Trial_328', 'Trial_329', 'Trial_330', 'Trial_331', 'Trial_332', 'Trial_333', 'Trial_334', 'Trial_335', 'Trial_336', 'Trial_337', 'Trial_338', 'Trial_339', 'Trial_340', 'Trial_341', 'Trial_342', 'Trial_343', 'Trial_344', 'Trial_345', 'Trial_346', 'Trial_347', 'Trial_348', 'Trial_349', 'Trial_350', 'Trial_351', 'Trial_352', 'Trial_353', 'Trial_354', 'Trial_355', 'Trial_356', 'Trial_357'] 
+
+To visualize all the data for a particular time series, specify the series name with option '-n'. 
+Example:
+    plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli
+
+To visualize the same data in a given time intervali only, specify this interval with option '-t'. 
+Example:
+    plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli -t 0-500
+
+To visualize the same data for a particular trial only, specify the trial id with '-T'.
+Example:
+    plot_nwb.py data_structure_NL_example20140905_ANM219037_20131117.nwb -n simple_optogentic_stimuli -T Trial_017
+
